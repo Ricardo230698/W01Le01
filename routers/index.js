@@ -1,9 +1,7 @@
 const express = require('express');
-
 const routerRicardo = express.Router();
+const myFunction = require('../controllers/index.js');
 
-routerRicardo.get('/', (req, res) => {
-    res.send('Hi Ricardo and welcome to CS341 - Web Services. We are having fun...');
-})
+routerRicardo.get('/', myFunction);
 
 module.exports = routerRicardo;
